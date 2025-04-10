@@ -11,14 +11,17 @@
     <Grid>
 
         <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="399*"/>
+                <ColumnDefinition Width="401*"/>
+            </Grid.ColumnDefinitions>
             <!--  DataGrid  -->
             <DataGrid
-            Margin="0,61,0,0"
             AutoGenerateColumns="False"
             CanUserAddRows="False"
             HeadersVisibility="Column"
             IsReadOnly="True"
-            SelectionMode="Single">
+            SelectionMode="Single" Grid.ColumnSpan="2" Margin="0,62,0,45" BorderBrush="Black">
                 <DataGrid.Columns>
                     <DataGridTextColumn Width="100" Header="Date" />
                     <DataGridTextColumn Width="120" Header="Phyto Number" />
@@ -33,10 +36,12 @@
                     <DataGridTextColumn Width="100" Header="Received" />
                 </DataGrid.Columns>
             </DataGrid>
+            <Grid Grid.ColumnSpan="2" Height="45" VerticalAlignment="Bottom" Background="White">
+                <Button Content="Add New Customer" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="0.718,-0.081" Background="#FF065668" BorderBrush="#FF065668" Width="118" Foreground="White" Height="27"/>
+            </Grid>
         </Grid>
         <Grid Background="#FF065668" Height="61" VerticalAlignment="Top"/>
-        <Button Content="Add New Customer" HorizontalAlignment="Right" Margin="0,21,36,0" VerticalAlignment="Top" RenderTransformOrigin="0.718,-0.081" Background="White" BorderBrush="White" Width="118"/>
-        <TextBlock HorizontalAlignment="Left" Margin="24,13,0,0" TextWrapping="Wrap" Text="👥 Customer" VerticalAlignment="Top" Width="156" Foreground="White" Background="#FF065668"  FontSize="22" FontWeight="Bold" FontFamily="Cascadia Code"/>
+        <TextBlock HorizontalAlignment="Left" Margin="24,13,0,0" TextWrapping="Wrap" Text="👥 Customer" VerticalAlignment="Top" Width="156" Foreground="White" Background="#FF065668"  FontSize="22" FontWeight="Bold"/>
 
     </Grid>
 </Page>

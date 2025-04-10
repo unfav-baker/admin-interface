@@ -66,9 +66,9 @@
         </Grid.ColumnDefinitions>
 
         <!-- Left Sidebar -->
-
-        <!-- Main Content -->
-        <ScrollViewer Padding="30" VerticalScrollBarVisibility="Auto" Grid.ColumnSpan="2">
+      
+            <!-- Main Content -->
+        <ScrollViewer Padding="30" VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Disabled" PanningMode="VerticalOnly" Grid.ColumnSpan="2">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>

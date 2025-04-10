@@ -15,12 +15,12 @@
     <Grid>
         <!--  DataGrid  -->
         <DataGrid
-            Margin="0,61,0,0"
+            Margin="0,61,0,45"
             AutoGenerateColumns="False"
             CanUserAddRows="False"
             HeadersVisibility="Column"
             IsReadOnly="True"
-            SelectionMode="Single">
+            SelectionMode="Single" BorderBrush="Black">
             <DataGrid.Columns>
                 <DataGridTextColumn Width="100" Header="Report ID" />
                 <DataGridTextColumn Width="120" Header="Report Type" />
@@ -31,9 +31,11 @@
                
             </DataGrid.Columns>
         </DataGrid>
+        <Grid Grid.ColumnSpan="2" Height="45" VerticalAlignment="Bottom" Background="White">
+            <Button Content="View Reports" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="0.718,-0.081" Background="#FF065668" BorderBrush="#FF065668" Width="118" Foreground="White" Height="27"/>
+        </Grid>
         <Grid Background="#FF065668" Height="61" VerticalAlignment="Top"/>
-        <Button Content="View Reports" HorizontalAlignment="Right" Margin="0,21,54,0" VerticalAlignment="Top" RenderTransformOrigin="0.718,-0.081" Width="118" Background="White" BorderBrush="White"/>
-        <TextBlock HorizontalAlignment="Left" Margin="10,13,0,0" TextWrapping="Wrap" Text=" 📝 Reports" VerticalAlignment="Top" Width="154" Foreground="White" Background="#FF065668"  FontSize="22" FontWeight="Bold" FontFamily="Cascadia Code"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,13,0,0" TextWrapping="Wrap" Text=" 📝 Reports" VerticalAlignment="Top" Width="154" Foreground="White" Background="#FF065668"  FontSize="22" FontWeight="Bold"/>
     </Grid>
 
 

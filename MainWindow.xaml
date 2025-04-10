@@ -157,7 +157,7 @@
             <Frame x:Name="MainContentFrame" 
        Grid.Column="2" 
        Grid.Row="2" 
-       NavigationUIVisibility="Hidden" Height="601" VerticalAlignment="Bottom" Navigated="MainContentFrame_Navigated"/>
+       NavigationUIVisibility="Hidden" Height="601" VerticalAlignment="Center" Navigated="MainContentFrame_Navigated" Background="White" BorderBrush="Black"/>
 
             <!-- Main Content Area -->
 

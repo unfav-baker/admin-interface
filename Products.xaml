@@ -13,12 +13,12 @@
         <Grid>
             <!--  DataGrid  -->
             <DataGrid
-            Margin="0,61,0,0"
+            Margin="0,61,0,45"
             AutoGenerateColumns="False"
             CanUserAddRows="False"
             HeadersVisibility="Column"
             IsReadOnly="True"
-            SelectionMode="Single">
+            SelectionMode="Single" BorderBrush="Black">
                 <DataGrid.Columns>
                     <DataGridTextColumn Width="100" Header="Product ID" />
                     <DataGridTextColumn Width="120" Header="Supplier ID" />
@@ -31,10 +31,12 @@
           
                 </DataGrid.Columns>
             </DataGrid>
+            <Grid Grid.ColumnSpan="2" Height="45" VerticalAlignment="Bottom" Background="White">
+                <Button Content="Create Report" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="0.718,-0.081" Background="#FF065668" BorderBrush="#FF065668" Width="118" Foreground="White" Height="27"/>
+            </Grid>
         </Grid>
         <Grid Background="#FF065668" Height="61" VerticalAlignment="Top"/>
-        <Button Content="Create Report" HorizontalAlignment="Right" Margin="0,21,54,0" VerticalAlignment="Top" RenderTransformOrigin="0.718,-0.081" Background="White" Width="118" BorderBrush="White"/>
-        <TextBlock HorizontalAlignment="Left" Margin="24,13,0,0" TextWrapping="Wrap" Text="📦 Products" VerticalAlignment="Top" Width="161" Foreground="White" Background="#FF065668"  FontSize="22" FontWeight="Bold" FontFamily="Cascadia Code" RenderTransformOrigin="0.5,0.5">
+        <TextBlock HorizontalAlignment="Left" Margin="24,13,0,0" TextWrapping="Wrap" Text="📦 Products" VerticalAlignment="Top" Width="161" Foreground="White" Background="#FF065668"  FontSize="22" FontWeight="Bold" RenderTransformOrigin="0.5,0.5">
             <TextBlock.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
